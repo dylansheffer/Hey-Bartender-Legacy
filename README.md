@@ -1,7 +1,7 @@
 ![Hey Bartender Icon](https://dylansheffer.github.io/assets/images/art/hey-bartender-logo.png)
 # Hey Bartender (Legacy)
 
-The original code for my capstone project in school. This project one the favorite capstone project and presentation award out of the entire PCSE Department at Christopher Newport University.
+The original code for my capstone project in school. This project won the favorite capstone project and presentation award out of the entire class of 2016 PCSE Department at Christopher Newport University.
 
 The project includes my data design for cocktails that can be sorted by various criteria, a beautiful responsive front-end, and a very simple query string based API.
 
