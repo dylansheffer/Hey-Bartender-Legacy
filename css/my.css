@@ -1,0 +1,579 @@
+/** --General Document CSS-- **/
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: #fff;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,a:focus {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #000;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.content-section {
+    padding-top: 50px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        padding-top: 0;
+    }
+
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+/** --END General Document CSS-- **/
+
+/** -- Intro -- **/
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #CCC;
+    background: url(../img/bar1.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+.setting .setting-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.setting .setting-body .brand-heading {
+    font-size: 40px;
+}
+
+.setting .setting-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 75px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+
+    .setting {
+        height: 50%;
+        padding: 0;
+    }
+
+    .setting .setting-body .brand-heading {
+        font-size: 75px;
+    }
+
+    .setting .setting-body .setting-text {
+        font-size: 26px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100% !important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #42dca3;
+    color: #42dca3;
+    background-color: transparent;
+}
+
+.btn-default:hover,.btn-default:focus {
+    border: 1px solid #42dca3;
+    outline: 0;
+    color: #000;
+    background-color: #42dca3;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/** --END Intro-- **/
+
+
+/** -- Image Buttons -- **/
+.setting {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+    color: #CCC;
+    background: url(../img/bar2.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.spirit {
+    background: url(../img/bar3.jpg) no-repeat bottom center scroll;
+}
+
+.style {
+    background: url(../img/bar4.jpg) no-repeat bottom center scroll;
+}
+
+.result {
+    background: url(../img/bar5.jpg) no-repeat bottom center scroll;
+}
+
+.image-button-container {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.image-button {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 70px 0;
+    font-size: 40px;
+    color: #fff;
+    background-color: #000;
+    opacity: .99;
+    text-shadow: 2px 2px #000;
+}
+
+.result-image {
+    height: 200px;
+}
+
+.recipe-detail {
+    padding: 20px 20px 0;
+    background: url(/img/wood.jpg) no-repeat center center scroll;
+}
+
+/* Tablet: Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .image-button-container {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+
+    .image-button {
+        vertical-align: middle;
+        font-size: 40px;
+        background-color: #000;
+        opacity: .99;
+        width: 5%;
+    }
+}
+
+/* Phone: Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .image-button-container {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+
+    .image-button {
+        vertical-align: middle;
+        font-size: 40px;
+        color: #fff;
+        background-color: #000;
+        opacity: .99;
+        width: 5%;
+    }
+
+    .content-section {
+        padding-top: 100px;
+    }
+}
+
+/** --END Image Buttons -- **/
+
+
+
+/** -- Footer -- **/
+
+footer {
+    padding: 50px 0;
+    background: url(/img/footer.jpg) no-repeat center center scroll;
+}
+
+footer p {
+    margin: 0;
+}
+
+/** -- END Footer -- **/
+
+/** -- Setting Styles -- **/
+#setting-home {
+    background: url(/img/setting-home.jpg) no-repeat center center scroll;
+}
+
+#setting-bar {
+    background: url(/img/setting-bar.jpg) no-repeat center center scroll;
+}
+
+#setting-vacation {
+    background: url(/img/setting-vacation.jpg) no-repeat center center scroll;
+}
+
+#setting-party {
+    background: url(/img/setting-party.jpg) no-repeat center center scroll;
+}
+/** -- END Setting Styles -- **/
+
+
+/** -- Spirit Styles -- **/
+#spirit-brandy {
+    background: url(/img/spirit-brandy.jpg) no-repeat center center scroll;
+}
+
+#spirit-gin {
+    background: url(/img/spirit-gin.jpg) no-repeat center center scroll;
+}
+
+#spirit-rum {
+    background: url(/img/spirit-rum.jpg) no-repeat center center scroll;
+}
+
+#spirit-tequila {
+    background: url(/img/spirit-tequila.jpg) no-repeat center center scroll;
+}
+
+#spirit-vodka {
+    background: url(/img/spirit-vodka.jpg) no-repeat center center scroll;
+}
+
+#spirit-whiskey {
+    background: url(/img/spirit-whiskey.jpg) no-repeat center center scroll;
+}
+
+#spirit-absinthe {
+    background: url(/img/spirit-absinthe.jpg) no-repeat center center scroll;
+}
+
+#spirit-liqueur {
+    background: url(/img/spirit-liqueur.jpg) no-repeat center center scroll;
+}
+/** -- END Spirit Styles -- **/
+
+
+/** -- Style Styles -- **/
+#style-sour {
+    background: url(/img/style-sour.jpg) no-repeat center center scroll;
+}
+
+#style-spiritforward {
+    background: url(/img/style-spiritforward.jpg) no-repeat center center scroll;
+}
+
+#style-modern {
+    background: url(/img/style-modern.jpg) no-repeat center scroll;
+}
+
+#style-tropical {
+    background: url(/img/style-tropical.jpg) no-repeat center center scroll;
+}
+
+#style-highball {
+    background: url(/img/style-highball.jpg) no-repeat center center scroll;
+}
+
+#style-hot {
+    background: url(/img/style-hot.jpg) no-repeat center center scroll;
+}
+
+#style-shot {
+    background: url(/img/style-shot.jpg) no-repeat center center scroll;
+}
+
+#style-classic {
+    background: url(/img/style-classic.jpg) no-repeat center center scroll;
+}
+/** -- END Style Styles -- **/
+
+
+/** -- Credits Pop-up Styles -- **/
+.modal-content {
+    color: #fff;
+    background-color: #000;
+}
+
+.panel-default {
+    border-color: transparent;
+}
+
+.panel {
+    background-color: transparent;
+    border: 0 solid transparent;
+}
+
+.panel-group {
+    margin-bottom: 0;
+}
+/** -- END Credits Pop-up Styles -- **/

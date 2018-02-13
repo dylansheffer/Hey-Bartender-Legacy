@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
+    <meta content="" name="author">
+
+    <title>Hey Bartender.</title><!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Custom CSS -->
+    <link href="css/my.css" rel="stylesheet"><!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type=
+    "text/css">
+    <link href=
+    "http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
+    rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel=
+    "stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top" id="page-top">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target=
+                ".navbar-main-collapse" data-toggle="collapse" type=
+                "button"><i class="fa fa-bars"></i></button> <a class=
+                "navbar-brand page-scroll" href="#page-top"><i class=
+                "fa fa-glass"></i> <span class="light">Hey</span>
+                Bartender.</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+
+            <div class=
+            "collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+
+
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+
+                    <li>
+                        <a class="" href="index.html">Recommender</a>
+                    </li>
+
+
+                    <li>
+                        <a class="" data-toggle="modal" href=
+                        "#credits">Credits</a>
+                    </li>
+
+
+                    <li>
+                        <a class="" href=
+                        "http://www.dylansheffer.com/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+   
+    <!-- Intro Header -->
+    <header class="intro" id="page-top">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">What Will You Be Having?</h1>
+
+
+                        <p class="intro-text">By answering a few questions, you
+                        will be on your way to finding your perfect drink for
+                        the evening (or morning, who am I to judge?)</p>
+                        <a class="btn btn-circle page-scroll" href=
+                        "#setting"><i class=
+                        "fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Setting Section -->
+    <section class="container content-section text-center setting" id=
+    "setting">
+        <div class="setting-body">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Where Will You Be Enjoying Your Drink?</h2>
+
+
+                    <p>Do you see yourself on the oceanfront, in a fancy
+                    bar/restaurant, trying to impress your friends at a party,
+                    or simply wanting to have a nice drink in the comfort of
+                    your own home?.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="image-button-container">
+        <div class="row">
+            <a class="page-scroll" href="#spirit" id="Home" onclick=
+            "addAttr(this.id, 'location')">
+            <div class="image-button col-md-6" id="setting-home">
+                Home
+            </div></a> <a class="page-scroll" href="#spirit" id="Bar" onclick=
+            "addAttr(this.id, 'location')">
+            <div class="image-button col-md-6" id="setting-bar">
+                Bar
+            </div></a>
+        </div>
+
+
+        <div class="row">
+            <a class="page-scroll" href="#spirit" id="Vacation" onclick=
+            "addAttr(this.id, 'location')">
+            <div class="image-button col-md-6" id="setting-vacation">
+                Vacation
+            </div></a> <a class="page-scroll" href="#spirit" id="Party"
+            onclick="addAttr(this.id, 'location')">
+            <div class="image-button col-md-6" id="setting-party">
+                Party
+            </div></a>
+        </div>
+    </div>
+    
+    <!-- Spirit Section -->
+    <section class="container content-section text-center setting spirit" id=
+    "spirit">
+        <div class="setting-body">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Tell Me Your Spirit Preference</h2>
+
+
+                    <p>Are you more into the complicated oak notes in a good
+                    whiskey or are you looking for a crisp and clean spirit
+                    like vodka?</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="image-button-container">
+        <div class="row">
+            <a class="page-scroll" href="#style" id="Brandy" onclick=
+            "addAttr(this.id, 'spirit')">
+            <div class="image-button col-md-3" id="spirit-brandy">
+                Brandy
+            </div></a> <a class="page-scroll" href="#style" id="Gin" onclick=
+            "addAttr(this.id, 'spirit')">
+            <div class="image-button col-md-3" id="spirit-gin">
+                Gin
+            </div></a> <a class="page-scroll" href="#style" id="Rum" onclick=
+            "addAttr(this.id, 'spirit')">
+            <div class="image-button col-md-3" id="spirit-rum">
+                Rum
+            </div></a> <a class="page-scroll" href="#style" id=
+            "Tequilla/Mezcal" onclick="addAttr(this.id, 'spirit')">
+            <div class="image-button col-md-3" id="spirit-tequila">
+                Tequila
+            </div></a>
+        </div>
+
+
+        <div class="row">
+            <a class="page-scroll" href="#style" id="Vodka" onclick=
+            "addAttr(this.id, 'spirit')">
+            <div class="image-button col-md-3" id="spirit-vodka">
+                Vodka
+            </div></a> <a class="page-scroll" href="#style" id="Whiskey"
+            onclick="addAttr(this.id, 'spirit')">
+            <div class="image-button col-md-3" id="spirit-whiskey">
+                Whiskey
+            </div></a> <a class="page-scroll" href="#style" id="Absinthe"
+            onclick="addAttr(this.id, 'spirit')">
+            <div class="image-button col-md-3" id="spirit-absinthe">
+                Absinthe
+            </div></a> <a class="page-scroll" href="#style" id="Liqueur"
+            onclick="addAttr(this.id, 'spirit')">
+            <div class="image-button col-md-3" id="spirit-liqueur">
+                Liqueur
+            </div></a>
+        </div>
+    </div>
+    
+    <!-- Style Section -->
+    <section class="container content-section text-center setting style" id=
+    "style">
+        <div class="setting-body">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>One More. What Style of Cocktail Do You Feel Like?</h2>
+
+
+                    <p>Would you rather have a calm sipper or are you looking
+                    to light the night on fire with rounds of shots?</p>
+                    .
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="image-button-container">
+        <div class="row">
+            <a href="#page-top" id="Sour" onclick="addAttr(this.id, 'style')">
+            <div class="image-button col-md-3" id="style-sour">
+                Sour
+            </div></a> <a href="#page-top" id="Spirit-Forward" onclick=
+            "addAttr(this.id, 'style')">
+            <div class="image-button col-md-3" id="style-spiritforward">
+                Spirit-Forward
+            </div></a> <a href="#page-top" id="Modern" onclick=
+            "addAttr(this.id, 'style')">
+            <div class="image-button col-md-3" id="style-modern">
+                Modern
+            </div></a> <a href="#page-top" id="Tropical" onclick=
+            "addAttr(this.id, 'style')">
+            <div class="image-button col-md-3" id="style-tropical">
+                Tropical
+            </div></a>
+        </div>
+
+
+        <div class="row">
+            <a href="#page-top" id="Highball" onclick=
+            "addAttr(this.id, 'style')">
+            <div class="image-button col-md-3" id="style-highball">
+                Highball
+            </div></a> <a href="#page-top" id="Hot" onclick=
+            "addAttr(this.id, 'style')">
+            <div class="image-button col-md-3" id="style-hot">
+                Hot
+            </div></a> <a href="#page-top" id="Shot" onclick=
+            "addAttr(this.id, 'style')">
+            <div class="image-button col-md-3" id="style-shot">
+                Shot
+            </div></a> <a href="#page-top" id="Classic" onclick=
+            "addAttr(this.id, 'style')">
+            <div class="image-button col-md-3" id="style-classic">
+                Classic
+            </div></a>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Copyright &copy; Dylan Sheffer 2016</p>
+        </div>
+    </footer>
+   
+    <!-- Credits -->
+    <div aria-hidden="true" aria-labelledby="creditsLabel" class="modal fade"
+    id="credits" role="dialog" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="text-center">Credits.</h3>
+                </div>
+
+
+                <div class="modal-body">
+                    <p class="text-center">This application was developed by
+                    <b><a href="http://dylansheffer.com">Dylan Sheffer</a></b>
+                    for his undergraduate capstone project.</p>
+
+                    <hr>
+
+
+                    <h5>Thank You!</h5>
+
+
+                    <p>A big thank you is in order for every person that helped
+                    me input data into the database. In no particular order
+                    here is a list of all involved.</p>
+
+
+                    <ul>
+                        <li>Collin McHugh</li>
+
+
+                        <li>Jeffery Lilliston</li>
+
+
+                        <li>Bryan Petty</li>
+
+
+                        <li>Timothy Giles</li>
+
+
+                        <li>Sebastian Bosek</li>
+
+
+                        <li>Kaitlin Isaac</li>
+
+
+                        <li>Blair Stinson</li>
+
+
+                        <li>Laura Fielden</li>
+                    </ul>
+
+
+                    <p>And a very special thank you to <b>Austin Schaffer</b>
+                    for allowing us to use his webscraper to accomplish this
+                    task.</p>
+
+                    <hr>
+
+
+                    <h5>Template</h5>
+
+
+                    <p>The base of the website is the <b><a href=
+                    "http://startbootstrap.com/template-overviews/grayscale/">Grayscale
+                    template</a></b> developed by <b><a href=
+                    "http://startbootstrap.com">StartBootstrap.com</a></b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <!-- jQuery -->
+    <script src="js/jquery.js">
+    </script> <!-- Bootstrap Core JavaScript -->
+     
+    <script src="js/bootstrap.min.js">
+    </script> <!-- Plugin JavaScript -->
+     
+    <script src="js/jquery.easing.min.js">
+    </script> <!-- Custom Theme JavaScript -->
+     
+    <script src="js/myScripts.js">
+    </script>
+</body>
+</html>
